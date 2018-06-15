@@ -1,4 +1,8 @@
 <h1>New {{ title }} Project</h1>
-<textarea name="" id="" cols="30" rows="10" [(ngModel)]="enteredValue"></textarea>
-<button (click)="onAddPost()">Save Posts</button>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput name="" id="" rows="3" [(ngModel)]="enteredValue"></textarea>
+  </mat-form-field>
+<button mat-raised-button color="accent" (click)="onAddPost()">Save Posts</button>
 <p>{{ newPost }}</p>
+</mat-card>
