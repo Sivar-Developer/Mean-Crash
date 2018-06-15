@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 export class PostCreateComponent {
   title = 'Mean Stack';
   newPost = 'No Content';
+  enteredValue = '';
 
-  onAddPost() {
-    this.newPost = 'This user\'s new post';
+  onAddPost(postInput: HTMLTextAreaElement) {
+    // console.dir(postInput);
+    this.newPost = this.enteredValue;
   }
 }
