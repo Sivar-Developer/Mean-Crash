@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
 })
 export class PostCreateComponent {
   title = 'Mean Stack';
+  newPost = 'No Content';
 
   onAddPost() {
-    alert('Post Added!');
+    this.newPost = 'This user\'s new post';
   }
 }
